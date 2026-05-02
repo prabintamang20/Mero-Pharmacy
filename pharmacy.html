@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mero Pharmacy | स्वास्थ्य सेवा तपाईंको नजिक</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="pharmacy.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <i class="fas fa-clinic-medical"></i>
+        <span>Mero Pharmacy</span>
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Medicine</a>
+        <a href="#">Wellness</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="header-actions">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Search medicine...">
+        </div>
+        <div class="cart-icon" id="cartIcon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+      </div>
+    </div>
+    <!-- Cart dropdown -->
+    <div class="cart-dropdown" id="cartDropdown">
+      <h4>
+        Your Cart <i class="fas fa-times" id="closeCart"></i>
+      </h4>
+      <ul class="cart-items" id="cartItemsList">
+        <!-- dynamic content -->
+        <li style="text-align: center; color: #95a5a6;">Cart is empty</li>
+      </ul>
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotalAmount">रू0</span>
+      </div>
+      <button class="clear-cart" id="clearCartBtn"><i class="far fa-trash-alt"></i> Clear cart</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>तपाईंको स्वास्थ्य, हाम्रो प्राथमिकता</h1>
+        <p>Genuine medicine & healthcare products</p>
+        <div class="hero-search">
+          <input type="text" placeholder="Search by name or category" id="heroSearch">
+          <button id="heroSearchBtn"><i class="fas fa-arrow-right"></i> Search</button>
+        </div>
+      </div>
+      <div>
+        <i class="fas fa-prescription-bottle" style="font-size: 7rem; color: #2c6e49; opacity: 0.7;"></i>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <div class="categories">
+      <span class="category-pill"><i class="fas fa-capsules"></i> Medicine</span>
+      <span class="category-pill"><i class="fas fa-leaf"></i> Supplement</span>
+      <span class="category-pill"><i class="fas fa-hand-holding-heart"></i> Personal Care</span>
+      <span class="category-pill"><i class="fas fa-kit-medical"></i> First Aid</span>
+      <span class="category-pill"><i class="fas fa-heart-pulse"></i> Device</span>
+    </div>
+
+    <!-- Product grid title -->
+    <div class="section-title">
+      <i class="fas fa-tablets" style="color: #2ecc71;"></i> Popular Products
+    </div>
+    <div class="products-grid" id="productsGrid">
+      <!-- JS will populate here -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4>Mero Pharmacy</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Putalisadak, Kathmandu</p>
+        <p><i class="fas fa-phone-alt"></i> +977 1 4234567</p>
+        <p><i class="fas fa-envelope"></i> care@meropharmacy.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <p>About us</p>
+        <p>Privacy policy</p>
+        <p>Terms & conditions</p>
+      </div>
+      <div class="footer-col">
+        <h4>We're available</h4>
+        <p>Sun - Fri: 7am - 9pm</p>
+        <p>Saturday: 8am - 6pm</p>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 Mero Pharmacy — स्वास्थ्य सेवा तपाईंको निम्ति
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="pharmacy.js" defer></script>
+</body>
+</html>
